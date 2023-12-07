@@ -16,7 +16,7 @@
             color: rgba(255, 255, 255, 0.5);
         }
 
-        .btnEdit {
+        .Edit {
             height: 35px;
             border-radius: 10px;
             background-color: #606060;
@@ -30,11 +30,11 @@
             box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 8px 0px;
         }
 
-        .btnEdit:hover {
+        .Edit:hover {
             transform: scale(1.02);
         }
 
-        .buttonCta {
+        .Cta {
             width: 95%;
             height: 40px;
             border-radius: 20;
@@ -48,7 +48,7 @@
             box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 8px 0px;
         }
 
-        .buttonCta:hover {
+        .Cta:hover {
             transform: scale(1.02);
         }
     </style>
@@ -101,7 +101,7 @@
             </div>
             <div
                 style="background-color: rgba(255,255,255,0);flex:1; display: flex;align-items: center;justify-content: center;">
-                <div onclick="aggiungiContatto()" class="buttonCta">
+                <div onclick="aggiungiContatto()" class="Cta">
                     <h5 style="color: white;font-weight: 600;">Salva</h5>
                 </div>
             </div>
@@ -247,7 +247,7 @@
                     <div style="flex: 1;background-color: black;display: flex;justify-content: flex-end;">
 
 
-                        <div onClick="modificaContatto(${indiceConttatto})" class="btnEdit">
+                        <div onClick="modificaContatto(${indiceConttatto})" class="Edit">
                             <h5 style="color: white;">Edit</h5>
                         </div>
                         <div  onClick="eliminaContatto(${indiceConttatto})" style="cursor: pointer;margin-top: 5px;margin-left: 20px;">
@@ -273,11 +273,11 @@
                     </div>
                     <div style="flex: 1;background-color: black;display: flex;justify-content: flex-end;">
 
-                        <div onClick="annullaModificaContatto(${indiceConttatto})" class="btnEdit"
+                        <div onClick="annullaModificaContatto(${indiceConttatto})" class="Edit"
                             style="margin-right: 20px;background-color: black;border: 1px solid rgba(255,255,255,0.3)">
                             <h5 style="color: white;">Annulla</h5>
                         </div>
-                        <div onClick="salvaModificaContatto(${indiceConttatto})" class="btnEdit">
+                        <div onClick="salvaModificaContatto(${indiceConttatto})" class="Edit">
                             <h5 style="color: white;">Salva</h5>
                         </div>
 
